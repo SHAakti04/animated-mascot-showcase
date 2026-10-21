@@ -1,24 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
+import KefaruMindsetSection from "@/components/KefaruMindset";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Kefaru Tech — More Than Technology" },
+      {
+        name: "description",
+        content:
+          "At Kefaru, we combine innovation, expertise and a fearless mindset to build technology that helps businesses grow, adapt and lead — today and tomorrow.",
+      },
+      { property: "og:title", content: "Kefaru Tech — More Than Technology" },
+      {
+        property: "og:description",
+        content:
+          "A way of moving business forward — security, cloud, AI, automation, data and Salesforce expertise, built around people.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: KefaruMindsetSection,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}

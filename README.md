@@ -1,14 +1,16 @@
-# Welcome to your Lovable project
+# Animated Mascot Showcase
+
+You needs to build the UI for provided section the Same UI. I am providing you image of section. Also providing you the image needing to build this section.I want the responsive, Premium,Morden attractive , Advance animation and way of representation for this sections. Surrounding images of mascot you needs make independent so they all be animated. Do not build header and footer. Build only the section given in image 1.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1d054f28-1c32-4f59-96fd-e8388ddcace1).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +22,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS

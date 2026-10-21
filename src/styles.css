@@ -431,6 +431,12 @@
   box-shadow: inset 0 -6px 14px color-mix(in oklab, black 25%, transparent);
 }
 
+.badge-inner-light {
+  background: var(--color-card);
+  color: inherit;
+  box-shadow: none;
+}
+
 .badge-md {
   width: 62px;
   height: 62px;
@@ -461,7 +467,8 @@
   will-change: transform, opacity;
 }
 
-.reveal.is-visible {
+.reveal.is-visible,
+.is-visible .reveal {
   opacity: 1;
   transform: none;
 }

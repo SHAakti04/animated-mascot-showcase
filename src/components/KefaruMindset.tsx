@@ -238,16 +238,16 @@ function MascotStage() {
 
         {/* Mascot */}
         <div
-          className="mascot-pop absolute inset-x-0 bottom-0 flex justify-center"
+          className="mascot-pop absolute inset-x-0 bottom-0 flex h-[86%] justify-center"
           style={{ "--reveal-delay": "150ms" } as CSSProperties}
         >
-          <div className="float-body">
+          <div className="float-body flex h-full items-end">
             <img
               src={mascot}
               alt="Kefaru Tech rhino mascot with arms crossed"
               width={517}
               height={1032}
-              className="h-[86%] w-auto max-w-none"
+              className="h-full w-auto max-w-none"
               fetchPriority="high"
             />
           </div>
@@ -263,7 +263,9 @@ function MascotStage() {
             <div className="badge-pop">
               <div className={b.float} style={{ animationDuration: b.dur }}>
                 <div className={`badge-circle ${b.size === "lg" ? "badge-lg" : "badge-md"}`}>
-                  <div className="badge-inner">
+                  <div
+                    className={`badge-inner ${b.custom === "salesforce" ? "badge-inner-light" : ""}`}
+                  >
                     {b.custom === "salesforce" ? (
                       <SalesforceMark />
                     ) : (
